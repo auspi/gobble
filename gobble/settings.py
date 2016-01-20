@@ -68,7 +68,6 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            OSCAR_MAIN_TEMPLATE_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -86,6 +85,13 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.eggs.Loader',
+)
+
 
 WSGI_APPLICATION = 'gobble.wsgi.application'
 
@@ -148,3 +154,7 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'Being Processed': ('Processed', 'Cancelled'),
     'Cancelled': (),
 }
+
+OSCAR_SHOP_NAME = 'PanchTatva'
+
+OSCAR_SHOP_TAGLINE = 'Start everything the Right way.'
