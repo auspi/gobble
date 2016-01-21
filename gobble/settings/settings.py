@@ -158,3 +158,10 @@ OSCAR_ORDER_STATUS_PIPELINE = {
 OSCAR_SHOP_NAME = 'PanchTatva'
 
 OSCAR_SHOP_TAGLINE = 'Start everything the Right way.'
+
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
+
+# Enable Persistent Connections
+DATABASES['default']['CONN_MAX_AGE'] = 500
