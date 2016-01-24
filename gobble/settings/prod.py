@@ -13,4 +13,4 @@ DATABASES['default']['CONN_MAX_AGE'] = 500
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
