@@ -165,7 +165,6 @@ DATABASES['default'] =  dj_database_url.config()
 # Enable Persistent Connections
 DATABASES['default']['CONN_MAX_AGE'] = 500
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
