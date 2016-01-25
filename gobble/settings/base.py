@@ -137,7 +137,7 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'Cancelled': (),
 }
 
-OSCAR_SHOP_NAME = 'PanchTatva'
+OSCAR_SHOP_NAME = 'PanchTatva alpha --- '
 
 OSCAR_SHOP_TAGLINE = 'Start everything the Right way.'
 
