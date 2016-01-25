@@ -1,1 +1,1 @@
-web: python gobble/manage.py collectstatic --noinput; python gobble/manage.py migrate; gunicorn gobble.wsgi --log-file -
+web: python manage.py collectstatic --noinput; python manage.py migrate; gunicorn gobble.wsgi --log-file -
