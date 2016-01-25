@@ -13,6 +13,7 @@ DATABASES['default']['CONN_MAX_AGE'] = 500
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = [".herokuapp.com", "*"]
+host = os.environ.get('HOST')
+ALLOWED_HOSTS = [host]
