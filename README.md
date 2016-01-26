@@ -4,7 +4,6 @@ Gobbly Wobble Boo
 
 Steps to be followed during first deploy on heroku prod:
 
-    * change `DATABASE_URL` in .env file to DATABASE_URL=postgres:///{heroku_app_name}
     * Go to heroku web
     * create new app with app name {heroku_app_name}
     * Go to deploy tab
@@ -17,6 +16,12 @@ Steps to be followed during first deploy on heroku prod:
     * click Reveal Config Vars
     * add DEBUG with value false
     * add host with value {heroku_app_name}.herokuapp.com
+    * This will finalize your deployment process
+    * You will need to setup create your first superuser:
+
+        * for this you will need heroku setup on you machine
+        * please follow getting started with heroku to download heroku on your local system
+        * then run `heroku run --app {heroku_app_name} python manage.py createsuperuser`
 
 
 After this when ever you push your code to this repo, auto deploy will be initiated.
