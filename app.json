@@ -1,0 +1,8 @@
+{
+  "name": "PanchTatva",
+  "description": "PanchTatva alpha --- Start everything the Right way.",
+  "image": "heroku/python",
+  "repository": "https://github.com/mallikdav/gobble",
+  "keywords": ["python", "django", "PanchTatva" ],
+  "addons": [ "heroku-postgresql" ]
+}
